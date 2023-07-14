@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>serene harmony</title>
+    <link href="images/leftwinger_fav.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="images/leftwinger_fav.png" rel="apple-touch-icon" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/b3c094837d.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick-theme.css" />
+    <link rel="stylesheet" href="serene_harmony.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li class="dropdown">
+                <a class="dropdown-link">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> Explore </span>
+                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                            id="arrow-horizontal">
+                            <path transform="translate(30)"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                data-name="Path 10" id="Path_10" fill="white"></path>
+                        </svg>
+                    </button>
+                </a>
+                <div class="dropdown-content">
+                    <a href="index.html">
+                        <button class="cta">
+                            <span class="hover-underline-animation"> home &nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                                <path transform="translate(30)"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    data-name="Path 10" id="Path_10" fill="white"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="aboutus.html">
+                        <button class="cta">
+                            <span class="hover-underline-animation">about us</span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                                <path transform="translate(30)"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    data-name="Path 10" id="Path_10" fill="white"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="services.html">
+                        <button class="cta">
+                            <span class="hover-underline-animation"> services </span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                                <path transform="translate(30)"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    data-name="Path 10" id="Path_10" fill="white"></path>
+                            </svg>
+                        </button>
+                    </a>
+                    <a href="projects.html">
+                        <button class="cta">
+                            <span class="hover-underline-animation"> projects </span>
+                            <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                                id="arrow-horizontal">
+                                <path transform="translate(30)"
+                                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                    data-name="Path 10" id="Path_10" fill="white"></path>
+                            </svg>
+                        </button>
+                    </a>
+                </div>
+            </li>
+            <li class="logo">
+                <a href="index.html">
+                    <img src="images/LW logo.png" alt="" class="logo01" />
+                </a>
+            </li>
+            <li>
+                <a href="contactus.html">
+                    <button class="cta">
+                        <span class="hover-underline-animation"> contact</span>
+                        <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                            id="arrow-horizontal">
+                            <path transform="translate(30)"
+                                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                                data-name="Path 10" id="Path_10" fill="white"></path>
+                        </svg>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <div class="navmobile">
+        <div class="nav-mob">
+            <a href="index.html" class="mob_nav_logo">
+                <img src="images/LW logo.png" />
+            </a>
+        </div>
+        <div class="overlay"></div>
+        <button class="burger" onclick="toggleMenu01()">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-close"></i>
+        </button>
+        <aside>
+            <a href="index.html"><button class="cta">
+                    <span class="hover-underline-animation"> home </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10" fill="white"></path>
+                    </svg>
+                </button>
+            </a>
+
+            <a href="aboutus.html"><button class="cta">
+                    <span class="hover-underline-animation"> about us </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10" fill="white"></path>
+                    </svg>
+                </button>
+            </a>
+
+            <a href="services.html"><button class="cta">
+                    <span class="hover-underline-animation"> services </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10" fill="white"></path>
+                    </svg>
+                </button>
+            </a>
+            <a href="projects.html"><button class="cta">
+                    <span class="hover-underline-animation"> projects </span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10" fill="white"></path>
+                    </svg>
+                </button>
+            </a>
+            <a href="contactus.html"><button class="cta">
+                    <span class="hover-underline-animation">contact</span>
+                    <svg viewBox="0 0 46 16" height="10" width="30" xmlns="http://www.w3.org/2000/svg"
+                        id="arrow-horizontal">
+                        <path transform="translate(30)"
+                            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" data-name="Path 10"
+                            id="Path_10" fill="white"></path>
+                    </svg>
+                </button></a>
+
+        </aside>
+    </div>
+
+
+
+    <div class="beforeabout">
+        <div class="headabout">
+            <h3>serene harmony</h3>
+            <h4>Welcoming Space with Timeless Appeal</h4>
+            <a class="smoothscroll" href="#001">
+                <div class="scroll-down"></div>
+            </a>
+        </div>
+    </div>
+
+    <div class="projectdetailscontainer">
+        <div class="projectmain">
+            <div class="projectyear">
+                <h4>year</h4><br>
+                <h3>2022</h3>
+            </div>
+            <div class="projectarea">
+                <h4>area</h4><br>
+                <h3>6,000+ sq. ft.</h3>
+            </div>
+            <div class="projectlocation">
+                <h4>location</h4><br>
+                <h3>ranchi</h3>
+                <span id="001"></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="spacebetween01" id="001"></div>
+
+    <div class="main-carousel">
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_02.webp">
+            <img src="images/Ranchi_Project_02.webp" alt="1" style="aspect-ratio: 5/3;" class="gallery__img" />
+            <div class="ga"></div>
+
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_10.webp">
+            <img src="images/Ranchi_Project_10.webp" alt="2" style="aspect-ratio: 8/5;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_01.webp">
+            <img src="images/Ranchi_Project_01.webp" alt="3" style="aspect-ratio: 8/5;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_03.webp">
+            <img src="images/Ranchi_Project_03.webp" alt="4" style="aspect-ratio: 8/5;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_04.webp">
+            <img src="images/Ranchi_Project_04.webp" alt="5" style="aspect-ratio: 19/10;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_05.webp">
+            <img src="images/Ranchi_Project_05.webp" alt="6" style="aspect-ratio: 8/5;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_06.webp">
+            <img src="images/Ranchi_Project_06.webp" alt="7" style="aspect-ratio: 8/5;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_07.webp">
+            <img src="images/Ranchi_Project_07.webp" alt="8" style="aspect-ratio: 4/3;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_08.webp">
+            <img src="images/Ranchi_Project_08.webp" alt="8" style="aspect-ratio: 19/10;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+        <div class="cell" data-fancybox="gallery" data-src="images/Ranchi_Project_09.webp">
+            <img src="images/Ranchi_Project_09.webp" alt="8" style="aspect-ratio: 4/3;" class="gallery__img" />
+            <div class="ga"></div>
+        </div>
+
+    </div>
+
+
+    <div class="spacebetween01" id="001"></div>
+    <div class="spacebetween01 sp04" id="001"></div>
+
+
+    <div class="paracontainer">
+        <div class="paramain">
+            <div class="paraheading">
+                <h3>serene harmony</h3>
+            </div>
+            <div class="para01">
+
+                <p>
+                    This apartment exudes simplicity, warmth, and love, enveloped in light tones of color and texture.
+                    It radiates beauty
+                    and brightness, with the lounging space adorned by antique art and sculptures showcasing Indian
+                    arts, adding a touch of
+                    cultural heritage.
+                    <br>
+                    <br>
+                    Every corner has been meticulously designed for maximum utility, achieving a flawless balance of
+                    functionality and
+                    aesthetic perfection. Explore this space and be filled with sheer wonderment at its allure and
+                    charm. With a sense of
+                    serenity and cultural richness, it creates an environment that embraces both comfort and elegance,
+                    leaving a lasting
+                    impression of harmonious beauty.
+                    <br>
+                    <br>
+                    Experience the joy of living in this meticulously crafted apartment, where every detail has been
+                    thoughtfully considered
+                    to create a sanctuary of timeless appeal.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="testcontainer">
+        <div class="testmain">
+
+            <div class="testheading">
+                <h3>story of satisfaction</h3>
+            </div>
+            <div class="testquotemain">
+                <div class="testquote">
+                    <blockquote>
+                        <p>We are constantly receiving compliments on our stunning home, all thanks to the incredible
+                            work of Leftwinger design"</p>
+                    </blockquote>
+                </div>
+                <div class="testname">
+                    <h3>owner's name</h3>
+                    <h4>owner</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cardcontainer">
+        <div class="cardmain">
+
+            <a class="card001" href="vibrant_soirée_project.html">
+                <span class="top-key" id="0001"></span>
+                <svg fill="#000000" height="80px" width="20px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 511.955 511.955" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M511.813,254.103c-0.96-5.227-5.653-8.853-10.88-8.853H36.293l195.2-195.093c4.053-4.267,3.947-10.987-0.213-15.04
+                    			c-4.16-3.947-10.667-3.947-14.827,0L3.12,248.45c-4.16,4.16-4.16,10.88,0,15.04l213.333,213.333
+                    			c4.267,4.053,10.987,3.947,15.04-0.213c3.947-4.16,3.947-10.667,0-14.827l-195.2-195.2h464.96
+                    			C507.76,266.583,512.88,260.717,511.813,254.103z" />
+                        </g>
+                    </g>
+                </svg>
+                <h3>vibrant soirée</h3>
+                <span class="bottom-key-1"></span>
+            </a>
+
+            <a class="card002" href="Aura_of_Elegance.html">
+                <span class="top-key"></span>
+                <h3>Aura of Elegance</h3>
+                <span class="top-key" id="0001"></span>
+                <svg fill="#000000" height="80px" width="20px" version="1.1" id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 512.036 512.036" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M508.916,248.351L295.583,35.018c-4.267-4.053-10.987-3.947-15.04,0.213c-3.947,4.16-3.947,10.667,0,14.827l195.093,195.2
+                    			H10.996c-5.333,0-10.133,3.84-10.88,9.067c-0.96,6.613,4.16,12.267,10.56,12.267h464.96L280.543,461.685
+                    			c-4.267,4.053-4.373,10.88-0.213,15.04c4.053,4.267,10.88,4.373,15.04,0.213c0.107-0.107,0.213-0.213,0.213-0.213l213.333-213.333
+                    			C513.076,259.338,513.076,252.511,508.916,248.351z" />
+                        </g>
+                    </g>
+                </svg>
+                <span class="bottom-key-1"></span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------------------footer starts------------------------------------------------------------------------------------>
+
+    <footer class="footer-main">
+        <div class="icons">
+            <a href="https://www.facebook.com/leftwingerdesigns/" target="_blank"
+                class="fa-brands fa-facebook-f facebook"></a>
+            <a href="https://wa.me/9970893321" target="_blank" class="fa-brands fa-whatsapp whatsapp"></a>
+            <a href="mailto:info@leftwinger.in" class="fa-regular fa-envelope envelope"></a>
+            <a href="https://www.instagram.com/leftwingerdesigns/" target="_blank"
+                class="fa-brands fa-instagram instagram"></a>
+            <a href="https://www.linkedin.com/company/left-winger-designs/" target="_blank"
+                class="fa-brands fa-linkedin-in linkedin"></a>
+        </div>
+        <div class="footerdis">
+            <div class="footer-left01">
+                2023 all rights reserved.&copy;&nbsp;&nbsp;
+            </div>
+
+            <div class="footer-right01">
+                Site By&nbsp;<a href="https://reifyconsulting.in/" target="_blank">Reify Consultancy.
+                    &reg;</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="slick.min.js">
+    </script>
+
+    <script type="text/javascript">
+
+        $('.main-carousel').flickity({
+            // options
+            cellAlign: 'center',
+            wrapAround: true,
+            autoPlay: 4500,
+            pauseAutoPlayOnHover: true,
+            arrowShape: {
+                x0: 10,
+                x1: 60, y1: 50,
+                x2: 65, y2: 45,
+                x3: 20
+            }
+
+        });
+
+
+    </script>
+
+    <script type="text/javascript">
+        const toggleMenu01 = () => document.body.classList.toggle("open");
+    </script>
+    <script src="Project.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+</body>
+
+</html>

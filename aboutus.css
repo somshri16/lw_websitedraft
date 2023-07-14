@@ -1,0 +1,2941 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  text-transform: lowercase;
+  font-family: "Lato", sans-serif;
+  border: none;
+  scroll-behavior: smooth;
+  list-style-type: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important; 
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important; 
+  outline: none !important;
+}
+
+
+/*-------------------nav bar starts------------*/
+
+nav {
+  position: relative;
+  top: 0;
+  z-index: 10;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  height: 77px;
+  width: 100%;
+  
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.navbar-yellow {
+  background-color: rgb(0,0,0, 0.6) !important;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+
+}
+
+nav ul {
+  height: 77px;
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  transition: 0.5s ease-in-out;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out;
+  height: 77px;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+nav ul li a {
+  display: block;
+  padding: 0px 20px;
+  color: black;
+  transition: background-color 0.5s ease-in-out;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0, 0.6);
+  min-width: 200px;
+  transition: 0.5s linear;
+  top: 100%;
+  left: 0;
+  border-radius: 0% 0% 5% 5%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.dropdown-link {
+  height: 77px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 15px 25px;
+  color: white;
+  transition: 0.5s ease-in-out;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.scroll-container {
+  height: 3000px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/* Before 300px */
+.navbar-before-300px {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: transparent;
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.navbar-before-300px ul li a {
+  color: white;
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+/* After 300px */
+.navbar-after-300px {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(0, 0, 0, 0.6);
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.navbar-after-300px ul li a {
+  color: white;
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.dropdown-link.dropdown-hover,
+.navbar-yellow,
+.dropdown-content:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.dropdown-content a:hover {
+  color: white;
+  transition: 0.5s linear;
+  -webkit-backdrop-filter: blur(1px);
+  -moz-backdrop-filter: blur(1px);
+  -ms-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+.logo01 {
+  width: 230px;
+  height: 37px;
+}
+
+/*-----mobile navbar---------*/
+
+.nav-mob {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  height: 11vh;
+  width: 100%;
+  z-index: 1;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(5px);
+  -moz-backdrop-filter: blur(5px);
+  -ms-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  backface-visibility: hidden;
+  transform: translateZ(0px);
+  transition: 0.3s;
+}
+
+.mob_nav_logo img {
+  width: 250px;
+  height: 43px;
+  margin: auto;
+}
+
+.burger {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  width: 82px;
+  height: 82px;
+  font-size: 30px;
+  color: #f9f9f9;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.burger i:last-child {
+  display: none;
+}
+
+body.open .burger i:first-child {
+  display: none;
+}
+
+body.open .burger i:last-child {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(27 32 44 / 70%);
+  visibility: hidden;
+  opacity: 0;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+body.open .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.nav-mob button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+aside {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+  padding: 60px 55px 25px 25px;
+  background-color: rgb(0, 0, 0, 0.6);
+  box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  translate: 100% 0;
+  transition: 0.3s;
+}
+
+body.open aside {
+  translate: 0;
+}
+
+aside a {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/*----------------- button ------------------*/
+
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+
+.cta span {
+  padding-bottom: 3px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 5px;
+  text-transform: lowercase;
+  display: inline-block;
+  transition: all 0.7s ease;
+  color: #fff;
+}
+
+.cta:hover span,
+.cta:focus span {
+  transform: translateX(4px);
+  transition: all 0.7s ease;
+}
+
+.cta:active span {
+  transform: scale(0.9);
+}
+
+.cta svg {
+  transform: translateX(0);
+  transition: all 0.5s ease;
+}
+
+.cta:hover svg,
+.cta:focus svg {
+  transform: translateX(10px);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+/*-------------------------------- before about us ------------------------------*/
+.beforeabout{
+  height: 77vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+  background-size: cover ;
+  background-position: bottom center;
+  display: flex;
+  justify-content:end;
+  align-items:center;
+  flex-direction:column;
+  text-align: center;
+}
+
+.beforeabout h3{
+  color: #fff;
+  font-size: 60px;
+  line-height: 80px;
+  font-weight: 300;
+  letter-spacing: 1.8px;
+  text-transform: lowercase;
+  padding-bottom: 10px;
+}
+
+.beforeabout h4{
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  padding-bottom: 35px;
+}
+
+.smoothscroll{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+.scroll-down {
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	text-decoration: none;
+	text-shadow: 0;
+	width: 15px;
+	height: 15px;
+	border-bottom: 2px solid #fff;
+	border-right: 2px solid #fff;
+	z-index: 1;
+	-webkit-transform: translate(-50%, 0%) rotate(45deg);
+	-moz-transform: translate(-50%, 0%) rotate(45deg);
+	transform: translate(-50%, 0%) rotate(45deg);
+	-webkit-animation: fade_move_down 2s ease-in-out infinite;
+	-moz-animation: fade_move_down 2s ease-in-out infinite;
+	animation: fade_move_down 2s ease-in-out infinite;
+}
+
+
+/*animated scroll arrow animation*/
+@-webkit-keyframes fade_move_down {
+ 0% {
+-webkit-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-webkit-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@-moz-keyframes fade_move_down {
+ 0% {
+-moz-transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+-moz-transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+@keyframes fade_move_down {
+ 0% {
+transform:translate(0, -10px) rotate(45deg);
+opacity: 0;
+}
+ 50% {
+opacity: 1;
+}
+ 100% {
+transform:translate(0, 10px) rotate(45deg);
+opacity: 0;
+}
+}
+
+.aboutbrandmain{
+  height: 23vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutbrand{
+  height: fit-content;
+  width: 70%;
+  line-height: 23px;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  
+}
+
+/*-------------------------------- brand values ------------------------------*/
+
+.brandvaluehead{
+  height: 140px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.brandvalueheading h3{
+  color:#000000;
+  font-size: 40px;
+  line-height: 80px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-transform: lowercase;
+}
+
+.brandvaluemain{
+  display: flex;
+  height: fit-content;
+  width: 100%;
+}
+
+.brandsectionphoto{
+  height: fit-content;
+  width: 50%;
+  overflow: hidden;
+}
+
+.photo{
+  padding-top: 66%;
+  width: 100%;
+  background-size: cover;
+  overflow: hidden;
+  transition: 12s;
+}
+
+.photo01{
+  background-image: url(images/ab_us01.jpg) ;
+}
+
+.photo02{
+  background-image: url(images/ab_us03.png) ;
+}
+
+.photo03{
+  background-image: url(images/ab_us0003.png) ;
+}
+
+.photo04{
+  background-image: url(images/ab_us04.jpg) ;
+}
+
+.brandsectionphoto:hover .photo {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.brandtext{
+  max-height: 725px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.brandtextmain{
+  height: 100%;
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 2/1;
+}
+
+.brandtextblockheader{
+  width: 70%;
+  height: auto;
+  margin-bottom: 15px;
+  
+}
+
+.brandtextblockheader h3{
+  color:#000000;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+
+.brandtextblockpara{
+  font-size: 15px;
+  color: #000000;
+  line-height: 23.334px;
+  letter-spacing: normal;
+  font-weight: 300;
+  width: 70%;
+  height: auto;
+  text-align: justify;
+  
+}
+
+.brandvaluemain02{
+  flex-direction: row-reverse;
+}
+
+/*-------------------------------- team division ------------------------------*/
+.spacebetween01 {
+  height: 12vh;
+  width: 100%;
+  background-color: #fdfdfd;
+}
+
+
+.meetteamhead{
+  height: 200px;
+}
+
+.teamdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  background-color: #fdfdfd;
+  padding: 0 30px;
+}
+
+
+
+.pictureteam {
+  background-image: url(images/team4141.png);
+  height: 500px;
+  width: 50%;
+  background-size: cover;
+  background-color: #fdfdfd;
+  background-repeat: no-repeat;
+  
+}
+
+.description {
+  height: 500px;
+  width: 50%;
+  background-color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.descriptionmain{
+  height: fit-content;
+  width: 80%;
+}
+
+
+.descriptionmain p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 23.334px;
+  letter-spacing: normal;
+  font-weight: 300;
+  text-align: justify;
+  
+}
+
+
+/* owner division */
+
+.owners01 {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fdfdfd;
+  padding: 0 30px ;
+  
+}
+
+.descriptionowner {
+  height: 100%;
+  width: 50%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainowner{
+  height: fit-content;
+  width: 80%;
+}
+
+.headingowner {
+  font-size: 45px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.ownername {
+  color:#000000;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+}
+.position {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.mainowner p {
+  font-size: 15px;
+  color: #000000;
+  line-height: 23.334px;
+  letter-spacing: normal;
+  font-weight: 300;
+  height: auto;
+  text-align: justify;
+}
+
+.pictureowner {
+  background-image: url(images/founder5151.png);
+  height: 700px;
+  width: 50%;
+  background-size: cover;
+  background-color: #fdfdfd;
+  background-repeat: no-repeat;
+
+}
+
+/*--social meadia--*/
+
+
+
+.social-menu {
+  margin-bottom: 20px;
+  height: 50px;
+  width: 200px;
+}
+.social-menu ul {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu ul li {
+  list-style: none;
+  margin-right: 20px;
+  
+}
+
+.social-menu ul li a:hover {
+  color: #ffffff;
+  border-radius: 50%;
+}
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  border-radius: 50%;
+  border: 1.2px solid  #6f6f6f;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  color:  #6f6f6f;
+  transition: 0.5s;
+}
+
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -5px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #ea4335;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #0077b5;
+}
+
+
+/*------------------------------footer------------------*/
+.footer-main{
+  background: linear-gradient(rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02)), url(images/sfoot.png);
+  background-repeat: repeat-x;
+  background-size:cover;
+  text-align: center;
+
+}
+
+.footer-main .icons{
+  padding: 32px;
+
+}
+
+
+.footer-main .icons a{
+  height: 40px;
+  width: 40px;
+  line-height:40px;
+  text-align: center;
+  font-size: 20px;
+  color: #6f6f6f;
+  border-radius: 50%;
+  border: 1.2px solid  #6f6f6f;
+  margin: 0 10px;
+  transition: all 0.7s ease;
+
+}
+
+.footerdis{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.footer-main .icons a:hover{
+  color: white;
+    border: 1.5px black solid;
+}
+
+.facebook:hover{
+  transform: translateY(-4px);
+  background-color: #3b5998;
+  transition: all 0.7s ease;
+  
+}
+
+
+.whatsapp:hover{
+  transform: translateY(-4px);
+  background-color: #4ac157;
+  transition: all 0.7s ease;
+  color: white;
+}
+
+
+.envelope:hover{
+  transform: translateY(-4px);
+  background-color: #ea4335;
+  transition: all 0.7s ease;
+  
+}
+
+
+.instagram:hover{
+  transform: translateY(-4px);
+
+  background: radial-gradient(
+      circle farthest-corner at 35% 90%,
+      #fec564,
+      transparent 50%
+    ),
+    radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+    radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 20% -50%,
+      #5258cf,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+    radial-gradient(
+      ellipse farthest-corner at 60% -20%,
+      #893dc2,
+      transparent 50%
+    ),
+    radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+    linear-gradient(
+      #6559ca,
+      #bc318f 30%,
+      #e33f5f 50%,
+      #f77638 70%,
+      #fec66d 100%
+    );
+  transition: all 0.7s ease;
+}
+
+
+.linkedin:hover{
+  transform: translateY(-4px);
+  background-color: #0177b5;
+  transition: all 0.7s ease;
+ 
+}
+
+.footer-right01 a{
+  color: black;
+}
+
+
+/*----------------small phone---------
+-----------------------------------------*/
+
+@media screen and (max-width: 376px) and (min-width: 10px){
+
+  .nav {
+    display: none;
+  }
+
+  .navmobile {
+    display: block;
+  }
+
+  .nav-mob{
+    height:55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mob_nav_logo img{
+    width: 130px;
+    height: 23px;
+    margin: auto;
+  }
+
+  .burger {
+    padding-top: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  aside {
+    width: 270px;
+    height: 100%;
+    padding: 60px 55px 25px 65px;
+  }
+
+  .beforeabout{
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+    background-size: fit-content ;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    
+  }
+
+  .beforeabout h4{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .aboutbrandmain{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutbrand{
+    height: fit-content;
+    width: 86%;
+    line-height: 23px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify; 
+  }
+
+  .brandvaluehead{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+
+  .brandvaluemain{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .brandvaluemain02{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .brandsectionphoto{
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .photo{
+    padding-top: 66%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: 2s;
+  }
+
+  .photo01{
+    background-image: url(images/ab_us01.jpg) ;
+  }
+
+  .photo02{
+    background-image: url(images/ab_us03.png) ;
+  }
+
+  .photo03{
+    background-image: url(images/ab_us0003.png) ;
+  }
+
+  .photo04{
+    background-image: url(images/ab_us04.jpg) ;
+  }
+
+  .brandsectionphoto:hover .photo {
+    transform: scale(1.2);
+    overflow: hidden;
+  }
+
+  .brandtext{
+    height: fit-content;
+    max-height: 725px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .brandtextmain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 2/1;
+  }
+
+  .brandtextblockheader{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+  .brandtextblockpara{
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    width: 86%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .meetteamhead{
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .teamdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 0;
+  }
+
+  .pictureteam {
+    background-image: url(images/team4141.png);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+
+  }
+
+  .description {
+    height: fit-content;
+    width: 86%;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .descriptionmain{
+    height: fit-content;
+    width: 100%;
+  }
+
+
+  .descriptionmain p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-align: justify;
+    padding: 20px 0;
+  }
+
+
+  /* owner division */
+
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0;
+    
+  }
+
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .descriptionowner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainowner{
+    height: fit-content;
+    width: 86%;
+  }
+
+  .ownername {
+    
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+  .position {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .mainowner p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+  }
+
+  /*--social meadia--*/
+  
+
+  .social-menu {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+  }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .social-menu ul li a:hover {
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    color:  #6f6f6f;
+    font-size: 15px;
+    line-height: 27px;
+    transition: 0.5s;
+  }
+
+  .mobspace001{
+    display: none;
+  }
+  .footer-main .icons{
+    padding: 35px;
+  }
+
+  .footer-main .icons a{
+    height: 38px;
+    width: 38px;
+    padding-bottom: 10px;
+    line-height:35px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #6f6f6f;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    margin: 0 8px;
+    transition: all 0.7s ease;
+  }
+}
+/*----------------big phone---------
+-----------------------------------------*/
+
+@media screen and (max-width: 450px) and (min-width: 376px){
+
+  .nav {
+    display: none;
+  }
+
+  .navmobile {
+    display: block;
+  }
+
+  .nav-mob{
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mob_nav_logo img{
+    width: 140px;
+    height: 25px;
+    margin: auto;
+  }
+
+  .burger {
+    padding-top: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  aside {
+    width: 270px;
+    height: 100%;
+    padding: 60px 55px 25px 65px;
+  }
+
+  .beforeabout{
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+    background-size: fit-content ;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    
+  }
+
+  .beforeabout h4{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .aboutbrandmain{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutbrand{
+    height: fit-content;
+    width: 86%;
+    line-height: 23px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify; 
+  }
+
+  .brandvaluehead{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+
+  .brandvaluemain{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .brandvaluemain02{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .brandsectionphoto{
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .photo{
+    padding-top: 66%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: 2s;
+  }
+
+  .photo01{
+    background-image: url(images/ab_us01.jpg) ;
+  }
+
+  .photo02{
+    background-image: url(images/ab_us03.png) ;
+  }
+
+  .photo03{
+    background-image: url(images/ab_us0003.png) ;
+  }
+
+  .photo04{
+    background-image: url(images/ab_us04.jpg) ;
+  }
+
+  .brandsectionphoto:hover .photo {
+    transform: scale(1.2);
+    overflow: hidden;
+  }
+
+  .brandtext{
+    height: fit-content;
+    max-height: 725px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .brandtextmain{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 2/1;
+  }
+
+  .brandtextblockheader{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+  .brandtextblockpara{
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    width: 86%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .meetteamhead{
+    height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .teamdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 0;
+  }
+
+  .pictureteam {
+    background-image: url(images/team4141.png);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+
+  }
+
+  .description {
+    height: fit-content;
+    width: 86%;
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .descriptionmain{
+    height: fit-content;
+    width: 100%;
+  }
+
+  .descriptionmain p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    text-align: justify;
+    padding: 20px 0;
+  }
+
+  /* owner division */
+
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0;
+  }
+
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+  }
+
+  .descriptionowner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainowner{
+    height: fit-content;
+    width: 86%;
+  }
+
+  .ownername {
+    
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+  .position {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .mainowner p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+  }
+
+  /*--social meadia--*/
+  
+
+  .social-menu {
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+  }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .social-menu ul li a:hover {
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    color:  #6f6f6f;
+    font-size: 15px;
+    line-height: 27px;
+    transition: 0.5s;
+  }
+
+  .mobspace001{
+    display: none;
+  }
+  .footer-main .icons{
+    padding: 25px;
+  }
+
+  .footer-main .icons a{
+    height: 38px;
+    width: 38px;
+    padding-bottom: 10px;
+    line-height:35px;
+    text-align: center;
+    font-size: 18px;
+    color: #6f6f6f;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    margin: 0 8px;
+    transition: all 0.7s ease;
+  }
+}
+
+
+@media screen and (max-width: 740px) and (min-width: 450px){
+  .nav {
+    display: none;
+  }
+  .nav-mob {
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navmobile {
+    display: block;
+  }
+
+  .mob_nav_logo img{
+    width: 135px;
+    height: 23px;
+    margin: auto;
+  }
+
+  .burger {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  aside {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+    padding: 40px 35px 25px 45px;
+    background-color: rgb(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+
+
+  .beforeabout{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+    background-size: fit-content ;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    
+  }
+
+  .beforeabout h4{
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .aboutbrandmain{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutbrand{
+    height: fit-content;
+    width: 86%;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify; 
+  }
+
+
+  .meetteamhead{
+    margin-top: 30px;
+    
+  }
+
+  .brandvaluehead{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    margin-bottom: 20px;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+  .photo{
+
+    transition: 1s;
+  }
+  
+  .brandtextblockheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+  .brandtextblockpara{
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    color: #000000;
+    width: 86%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .teamdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 0px;
+  }
+
+  .pictureteam {
+    width: 90%;
+    height: 300px;
+  }
+
+  .description {
+    width: 90%;
+    height: fit-content;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description h1 {
+    margin-top: 0px;
+    font-size: 26px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center; 
+  }
+
+  .descriptionmain{
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .description p {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    text-align: justify;
+    line-height: 18px;
+  }
+  
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0px ;
+  }
+
+  .descriptionowner {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .mainowner{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ownername {
+    color:#000000;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    text-align: center;
+  }
+  .position {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .mainowner p {
+    font-size: 12px;
+    color: #000000;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+    padding: 0 40px;
+  }
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 500px;
+    width: 90%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+
+  }
+  /*--social meadia--*/
+  
+
+  .social-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .social-menu ul li a:hover {
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    color:  #6f6f6f;
+    font-size: 15px;
+    line-height: 27px;
+    transition: 0.5s;
+  }
+
+  .mobspace001{
+    display: none;
+  }
+
+  .footer-main .icons{
+    padding: 26px;
+  }
+
+  .footer-main .icons a{
+    height: 34px;
+    width: 34px;
+    padding-bottom: 10px;
+    line-height:32px;
+    text-align: center;
+    font-size: 16px;
+    color: #6f6f6f;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    margin: 0 4px;
+    transition: all 0.7s ease;
+  }
+    
+
+}
+/*----------------tablet ipad mini---------
+-----------------------------------------*/
+
+@media screen and (max-width: 770px) and (min-width: 740px){
+  .nav {
+    display: none;
+  }
+  .nav-mob {
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navmobile {
+    display: block;
+  }
+
+  .mob_nav_logo img{
+    width: 180px;
+    height: 32px;
+    margin: auto;
+    
+  }
+
+  .burger {
+    width: 82px;
+    height: 72px;
+    font-size: 22px;
+  }
+
+  aside {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    padding: 80px 55px 25px 85px;
+    background-color: rgb(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+
+  .beforeabout{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+    background-size: fit-content ;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    
+  }
+
+  .beforeabout h4{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .aboutbrandmain{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutbrand{
+    height: fit-content;
+    width: 86%;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify; 
+  }
+
+
+  .meetteamhead{
+    margin-top: 50px;
+  }
+
+  .brandvaluehead{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    margin-bottom: 20px;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+  .photo{
+
+    transition: 1s;
+  }
+  
+  .brandtextblockheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+  .brandtextblockpara{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #000000;
+    width: 86%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .teamdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 0px;
+  }
+
+  .pictureteam {
+    width: 90%;
+    height: 400px;
+  }
+
+  .description {
+    width: 100%;
+    height: fit-content;
+    
+    padding: 0 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description h1 {
+    margin-top: 0px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center; 
+  }
+
+  .descriptionmain{
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .description p {
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 20px;
+  }
+  
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0px ;
+  }
+
+  .descriptionowner {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .mainowner{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ownername {
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+  .position {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .mainowner p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 22.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+    padding: 0 40px;
+  }
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 500px;
+    width: 90%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+
+  }
+  /*--social meadia--*/
+  
+
+  .social-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .social-menu ul li a:hover {
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    color:  #6f6f6f;
+    font-size: 15px;
+    line-height: 27px;
+    transition: 0.5s;
+  }
+
+  .mobspace001{
+    display: none;
+  }
+  .footer-main .icons{
+    padding: 25px;
+  }
+
+  .footer-main .icons a{
+    height: 38px;
+    width: 38px;
+    padding-bottom: 10px;
+    line-height:35px;
+    text-align: center;
+    font-size: 18px;
+    color: #6f6f6f;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    margin: 0 5px;
+    transition: all 0.7s ease;
+  }
+
+}
+
+/*----------------tablet ipad air---------
+-----------------------------------------*/
+
+@media screen and (max-width: 821px) and (min-width: 769px){
+  
+  .nav {
+    display: none;
+  }
+  .nav-mob {
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navmobile {
+    display: block;
+  }
+
+  .mob_nav_logo img{
+    width: 180px;
+    height: 32px;
+    margin: auto;
+    
+  }
+
+  .burger {
+    width: 82px;
+    height: 72px;
+    font-size: 22px;
+  }
+
+  aside {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+    padding: 80px 55px 25px 85px;
+    background-color: rgb(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+    translate: 100% 0;
+    transition: 0.3s;
+  }
+
+  .beforeabout{
+    height: 400px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/about_back001.jpg);
+    background-size: fit-content ;
+    background-position: bottom bottom;
+    display: flex;
+    justify-content:end;
+    align-items:center;
+    flex-direction:column;
+    text-align: center;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    
+  }
+
+  .beforeabout h4{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .aboutbrandmain{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .aboutbrand{
+    height: fit-content;
+    width: 86%;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: justify; 
+  }
+
+
+  .meetteamhead{
+    margin-top: 50px;
+  }
+
+  .brandvaluehead{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    margin-bottom: 20px;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+  .photo{
+
+    transition: 1s;
+  }
+  
+  .brandtextblockheader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+  .brandtextblockpara{
+    font-size: 14px;
+    color: #000000;
+    line-height: 18.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    width: 86%;
+    height: auto;
+    text-align: justify;
+  }
+
+  .teamdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 0px;
+  }
+
+  .pictureteam {
+    width: 90%;
+    height: 400px;
+  }
+
+  .description {
+    width: 100%;
+    height: fit-content;
+    
+    padding: 0 40px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description h1 {
+    margin-top: 0px;
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-align: center; 
+  }
+
+  .descriptionmain{
+    height: fit-content;
+    width: 100%;
+  }
+  
+  .description p {
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: justify;
+    line-height: 20px;
+  }
+  
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0px ;
+  }
+
+  .descriptionowner {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .mainowner{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .ownername {
+    color:#000000;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: center;
+  }
+  .position {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .mainowner p {
+    font-size: 14px;
+    color: #000000;
+    line-height: 22.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+    width: 70%;
+  }
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 500px;
+    width: 90%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+
+  }
+  /*--social meadia--*/
+  
+
+  .social-menu {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .social-menu ul {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0px 20px 0px 0px;
+  }
+
+  .social-menu ul li a:hover {
+    color: #ffffff;
+    border-radius: 50%;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.2px solid  #6f6f6f;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0, 0px);
+    color:  #6f6f6f;
+    font-size: 15px;
+    line-height: 27px;
+    transition: 0.5s;
+  }
+
+  .mobspace001{
+    display: none;
+  }
+
+
+}
+
+@media screen and (max-width: 1200px) and (min-width: 821px){
+  .nav {
+    display: block;
+  }
+
+  .navmobile {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in-out;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  nav ul {
+    height: 70px;
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    transition: 0.5s ease-in-out;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out;
+    height: 70px;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 0px 20px;
+    color: black;
+    transition: background-color 0.5s ease-in-out;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.6);
+    min-width: 200px;
+    transition: 0.5s linear;
+    top: 100%;
+    left: 0;
+    border-radius: 0% 0% 5% 5%;
+    width: 100%;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .dropdown-link {
+    height: 70px;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    transition: 0.5s ease-in-out;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .scroll-container {
+    height: 3000px;
+    transition: background-color 0.5s ease-in-out;
+  }
+
+  /* Before 300px */
+  .navbar-before-300px {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: transparent;
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .navbar-before-300px ul li a {
+    color: white;
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  /* After 300px */
+  .navbar-after-300px {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .navbar-after-300px ul li a {
+    color: white;
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .dropdown-link.dropdown-hover,
+  .navbar-yellow,
+  .dropdown-content:hover {
+    background-color: rgb(0, 0, 0, 0.6);
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .dropdown-content a:hover {
+    color: white;
+    transition: 0.5s linear;
+    -webkit-backdrop-filter: blur(1px);
+    -moz-backdrop-filter: blur(1px);
+    -ms-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+  }
+
+  .logo01 {
+    width: 180px;
+    height: 29px;
+  }
+
+  .beforeabout h3{
+    color: #fff;
+    font-size: 45px;
+    line-height: 80px;
+    font-weight: 300;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+    padding-bottom: 10px;
+  }
+
+  .brandvalueheading h3{
+    color:#000000;
+    font-size: 34px;
+    line-height: 80px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-transform: lowercase;
+  }
+
+  .photo{
+    padding-top: 66%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    transition: 2s;
+  }
+
+
+  .brandtextblockheader h3{
+    color:#000000;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+
+
+  .pictureteam {
+    background-image: url(images/team4141.png);
+    height: 500px;
+    width: 50%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    border: #0077b5 2px solid;
+  }
+
+  .owners01 {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    padding: 0 30px ;
+  }
+
+  .descriptionowner {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainowner{
+    height: fit-content;
+    width: 90%;
+  }
+
+  .headingowner {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 4px;
+  }
+  .ownername {
+    color:#000000;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+  }
+  .position {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+  }
+
+  .mainowner p {
+    font-size: 15px;
+    color: #000000;
+    line-height: 23.334px;
+    letter-spacing: normal;
+    font-weight: 300;
+    height: auto;
+    text-align: justify;
+  }
+
+  .pictureowner {
+    background-image: url(images/founder5151.png);
+    height: 600px;
+    width: 50%;
+    background-size: cover;
+    background-color: #fdfdfd;
+    background-repeat: no-repeat;
+    border: #0077b5 2px solid;
+  }
+  
+  .mobspace001{
+    display: none;
+  }
+
+}
+
+@media (min-width: 1201px) {
+  .nav {
+    display: block;
+  }
+
+  .navmobile {
+    display: none;
+  }
+}
+
